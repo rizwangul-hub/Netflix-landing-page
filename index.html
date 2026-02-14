@@ -20,12 +20,11 @@
                 <input type="submit" value="Get Started &nbsp; >" name="" id="submit">
             </div></section>
             <div class="ful">
-                    <h1 class="more"> What I Do</h1>
 
+                <h1 class="more">Trending Now</h1>
 <section class="main">
-
     <div class="card-1">
-
+        
 <div class="card">
     <img src="image/jingle.webp" alt="">
     <div class="number">
@@ -35,8 +34,7 @@
 <div class="card">
     <img src="image/squid.webp" alt="">
     <div class="number">
-    <h2>2</h2>
-</div>
+    <h2>2</h2></div>
 </div>
 <div class="card">
     <img src="image/stranger.webp" alt="">
@@ -58,10 +56,7 @@
     <div class="number">
     <h2>6</h2></div>
 </div>
-    
     </div>
-</section></div>><
-
 <h1 class="more">More Reasons to Join</h1>
 <div class="simple-card">
     <div class="box">
@@ -87,12 +82,18 @@
 </div>
 <h1 class="more">Frequently Asked Questions</h1>
 <div class="question">
-   <div class="plus"> <div class="text-question">What is Netflix? </div><div class="space">+</div></div>
-   <div class="plus"> <div class="text-question">How much does netflix cost?</div><div class="space">+</div></div>
-  <div class="plus">  <div class="text-question">Where can I watch?</div><div class="space">+</div></div>
-    <div class="plus"><div class="text-question">How do I cancel?</div><div class="space">+</div></div>
-   <div class="plus"> <div class="text-question">What can I watch on Netflix?</div><div class="space">+</div></div>
-   <div class="plus"><div class="text-question">Is netflix is good for kids?</div><div class="space">+</div></div>
+   <div class="plus" onclick="Showpara(0)" > <div class="text-question">What is Netflix? </div><div class="space">+</div></div>
+   <p style="color: aliceblue; display: none;" class="show" id="vis" >Netflix is a global subscription-based streaming service offering a vast library of TV shows, movies, anime, and documentaries, including original content, for a monthly fee. It operates on-demand, allowing users to watch content instantly on internet-connected devices like TVs, smartphones, laptops, and game consoles. </p>
+   <div class="plus" onclick="Showpara(1)"> <div class="text-question">How much does netflix cost?</div><div class="space">+</div></div>
+     <p style="color: aliceblue; display: none;" class="show" id="vis" >Netflix in the US offers three main monthly plans as of early 2026: Standard with ads ($7.99), Standard ($17.99), and Premium ($24.99). These plans differ in ad presence, streaming quality (Full HD to 4K), and the number of devices allowed for simultaneous viewing, ranging from 2 to 4 screens.  </p>
+  <div class="plus" onclick="Showpara(2)">  <div class="text-question">Where can I watch?</div><div class="space">+</div></div>
+    <p style="color: aliceblue; display: none;" class="show" id="vis" >Watch Free Movies Online with PlexYou can watch movies and TV shows on major streaming platforms like Netflix, Amazon Prime Video, Hulu, and Peacock, or find free, legal content on Plex and YouTube. Use search engines like JustWatch or IMDb to find where specific titles are streaming.  </p>
+    <div class="plus" onclick="Showpara(3)"><div class="text-question">How do I cancel?</div><div class="space">+</div></div>
+      <p style="color: aliceblue; display: none;" class="show" id="vis" >To cancel your Netflix subscription, sign in to your account on a web browser, select your profile, go to the "Account" page, and click "Cancel Membership" under the membership section, followed by "Finish Cancellation". You can continue to stream until the end of your current billing period.  </p>
+   <div class="plus" onclick="Showpara(4)"> <div class="text-question">What can I watch on Netflix?</div><div class="space">+</div></div>
+     <p style="color: aliceblue; display: none;" class="show" id="vis" > As of February 2026, Netflix's trending and top-rated library includes a mix of long-running global hits and new releases. High-profile titles currently dominating the platform include The Lincoln Lawyer, which recently released its fourth season on 5 February 2026, and the period drama Bridgerton, whose fourth season's second part is scheduled to premiere on 26 February 2026.</p>
+   <div class="plus" onclick="Showpara(5)"><div class="text-question">Is netflix is good for kids?</div><div class="space">+</div></div>
+     <p style="color: aliceblue; display: none;" class="show" id="vis" > Netflix is generally good for kids, provided parents utilize built-in parental controls to manage content and screen time. It offers a dedicated "Kids" profile with age-appropriate, curated content and allows for maturity rating restrictions, PIN protection for profiles, and viewing history monitoring. However, without supervision, it is easy for children to access inappropriate, mature content. </p>
 </div>
 <p class="para-3">Ready to watch? Enter your email to create or restart your membership.</p>
 <div class="form">
@@ -112,7 +113,7 @@
                 <a href="#">Account</a>
                 <a href="#">Media Center</a>
                 <a href="#">Investor Relations</a>
-                <a href="#">Jobs</a>
+<a href="#">Jobs</a>
                 <a href="#">Ways to Watch</a>
                 <a href="#">Terms of Use</a>
                 <a href="#">Privacy</a>
@@ -126,6 +127,9 @@
                         <div class="country"></div>
             <select name="" id="">
                 <option value="English">English</option>
+                <option value="urdu">Urdu</option>
+                 <option value="Hindi">Hindi</option>
+
             </select></div>
             <div class="para-4">Netflix Pakistan</div>
             <div class="para-5">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span>Learn more.</span> </div>
@@ -135,4 +139,9 @@
     </div>
     
 </body>
+<script>
+    function Showpara(index) {
+     document.getElementsByClassName("show")[index].style.display="flex"             
+    }
+</script>
 </html>
